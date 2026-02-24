@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
       /*Surface Cleaners*/{ id: 6007, name: "Colin Glass Cleaner ",                                          image: "clcolin.jpg",        cat: "cleaningessentials",        subcat: "Surface Cleaners",   selectedVariant: "Qty",        variants: { "Qty":     { price: 120, count: 0, unit: "500ml" } } },
                           { id: 6008, name: "Lizol Disinfectant Surface & Floor Cleaner ",                   image: "cllizol.jpg",        cat: "cleaningessentials",        subcat: "Surface Cleaners",   selectedVariant: "Qty",        variants: { "Qty":     { price: 260, count: 0, unit: "1L" } } },
-                          { id: 6009, name: "Feather's Premium Paper Napkin(ply 2) ",                        image: "clfeathern.jpg",       cat: "cleaningessentials",        subcat: "Surface Cleaners",   selectedVariant: "Qty",        variants: { "Qty":     { price: 90, count: 0, unit: "105gm" } } },
+                          { id: 6009, name: "Feather's Premium Paper Napkin(ply 2) ",                        image: "clfeathern.jpg",       cat: "cleaningessentials",        subcat: "Surface Cleaners",   selectedVariant: "Qty",        variants: { "Qty":     { price: 90, count: 0, unit: "105gm" } } }
                         
     ];
 
@@ -707,4 +707,5 @@ if (statsSection) {
     body.classList.add('dark-mode');
     toggleSwitch.checked = true; 
 }
+
 });
