@@ -1,0 +1,153 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wink It Mussoorie | Mussoorie Delivery Service</title>
+    
+    <meta name="description" content="Wink It Mussoorie provides premium delivery for food and essentials in 30-60 minutes. Serving the community from 8:00 AM to 11:30 PM. Order via WhatsApp!">
+
+    <meta name="keywords" content="Wink It Mussoorie, food delivery Mussoorie, food delivery char dukan, fast delivery Mussoorie, Delivery, Wink It Landour, food delivery landour, landour delivery, mussoorie delivery, mall road delivery, dalai hill delivery, library delivery">
+
+    <meta property="og:title" content="WinkIt Mussoorie">
+    <meta property="og:description" content="Fastest delivery for food and essentials in Mussoorie. Open 8:00 AM - 11:30 PM.">
+    <meta property="og:image" content="newlogo.jpg">
+    <meta property="og:url" content="https://www.winkitmussoorie.com">
+
+    <link rel="icon" type="image/x-icon" href="newlogo.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="splash-screen">
+        <video id="intro-video" autoplay muted playsinline>
+            <source src="intro.mp4" type="video/mp4">
+            .
+        </video>
+    </div>
+    <div id="cart-popup" class="cart-popup hidden">
+        <div id="popup-images-container" class="popup-images"></div>
+        <p><span id="popup-count">0</span> Items in cart</p>
+    </div>
+
+    <header>
+        <a href="https://www.instagram.com/wink_it_mussoorie" id="logo-link"><h2 class="logo">Wink It<br>Mussoorie</h2></a>
+        
+        <div class="search-container">
+            <input type="text" id="product-search" placeholder="Search product...">
+            <span id="clear-search" class="clear-btn hidden">✕</span>
+            <button class="search-btn" id="search-btn">🔍</button>
+            <div id="search-suggestions"></div>
+        </div>
+
+        <div class="nav-links">
+            <a id="collectiona" href="https://api.whatsapp.com/send?phone=917983427187&text=Hi,%20I'd%20like%20to%20request%20a%20service."><h2>Request</h2></a>
+            <div class="order-trigger" id="cart-trigger">
+                Cart: <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+    <div class="top-bar">
+        <div class="online-status">
+            <div class="dot-container">
+                <div class="dot"></div>
+                <div class="pulse"></div>
+            </div>
+            <span class="status-text">
+                <span id="online-count">1</span> online now
+            </span>
+        </div>
+
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </div>
+
+    <main id="collection-view">
+        <h1 class="main-title">Collections</h1>
+        <div class="collection-grid" id="collection-grid"></div>
+    </main>
+
+    <div id="product-slider">
+        <div class="slider-header">
+            <h2 id="slider-title">Collection</h2>
+            <button class="back-btn" id="close-slider">✕</button>
+        </div>
+        <div id="pslidandp">
+            <div id="pgroupslider">ajlfh</div>
+            <div id="product-grid">
+            </div>
+        </div>
+    </div>
+
+    <div id="orderSidebar">
+        <button class="close-btn" id="close-sidebar">×</button>
+        <h2>Checkout</h2>
+        <div id="sidebar-content"></div>
+        <div id="sidebar-footer">
+            <hr>
+            <p>Items Total: Rs <span id="subtotal-val">0</span></p>
+            <p>Delivery Charges: Rs <span id="delivery-val">0</span></p>
+            <h3>Total Amount: Rs <span id="total-price">0</span></h3>
+            <div class="address-section">
+                <input type="text" id="cust-name" placeholder="Your Name">
+                <button id="location-btn" class="loc-btn">📍 Share Current Location</button>
+                <h6>OR</h6>
+                <textarea id="cust-address" rows="3" placeholder="Address"></textarea>
+                <span id="location-display"></span>
+            </div>
+            <button class="checkout-btn" id="checkout-whatsapp">
+                <span class="lock-icon">🔒</span> Order via WhatsApp &#10140;
+            </button>
+        </div>
+    </div>
+    <div class="stats-container">
+        <div class="stat-group">
+            <span class="counter" data-target="10">0+</span>
+            <span class="label">Orders</span>
+        </div>
+        <div class="stat-group">
+            <span class="counter" data-target="150">0+</span>
+            <span class="label">Products</span>
+        </div>
+        <div class="stat-group">
+            <span class="counter" data-target="3">0+</span>
+            <span class="label">Delivery Partners</span>
+        </div>
+    </div>
+
+    <div id="abt" class="about">
+        <h1 class="heading">About Us</h1>
+        <div class="abox">
+            <div class="atext">
+                <h1>Wink It Mussoorie</h1>
+                <p>Looking for Blinkit in Mussoorie? While big-city apps stop at the foothills, <b>Wink It Mussoorie </b>is here to serve the "Queen of Hills." Founded in 2026, we are Mussoorie’s dedicated delivery service for food, late-night snacks, and daily essentials.
+                    Whether you’re a hotel guest craving munchies or a resident needing urgent supplies, our team delivers within <b>30 to 60 minutes</b>. We operate from 8:00 AM to 11:30 PM, ensuring you never have to go without. Plus, with our personalized service, if your choice is out of stock, we’ll call you personally to suggest the best alternatives.</p>
+                <a href="tel:7983427187"><button class="contact-btn">Contact</button></a>
+            </div>
+            <div class="aimg">
+                <img src="newlogo.jpg" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="cbox">
+        <div class="cwrap">
+            <img class="cimg" src="newlogo.jpg" alt="Logo Footer">
+            <div class="ctext">
+                <h1>Address</h1>
+                <h3>Nan Para House</h3>
+                <h3>Mussoorie</h3>
+                <h3>Uttarakhand-248179</h3>
+                <h3>Contact: <a href="tel:7983427187">7983427187</a></h3>
+                <div class="acc">
+                    <a href="https://www.instagram.com/winkitmussoorie"><img title="Instagram" src="insta.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+            <a href="https://maps.app.goo.gl/6aGjydyM8Kf6ZvdJ6" id="map-link"><img class="cimg" src="map.jpg" alt="Map"></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
