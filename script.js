@@ -37,175 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const products = [
 /*Drink*/               { id: 1,   name: "Bottle-Pepsi",                                                             image: "dpepsi.jpg",            cat: "beverages",       subcat: "Cold Drink",                   selectedVariant: "S",           variants: { "S":        { price: 40, count: 0, unit: "750ml" }, "L": { price: 90, count: 0, unit: "2L" } } },
-                        { id: 2,   name: "Bottle-Coca-Cola",                                                  image: "dcokeb.jpg",            cat: "beverages",       subcat: "Cold Drink",                   selectedVariant: "S",           variants: { "S":        { price: 40, count: 0, unit: "750ml" }, "L": { price: 90, count: 0, unit: "2L" } } },
-                        { id: 3,   name: "Sprite",                                                           image: "dsprite.jpg",           cat: "beverages",       subcat: "Cold Drink",                   selectedVariant: "S",           variants: { "S":        { price: 40, count: 0, unit: "750ml" }, "L": { price: 90, count: 0, unit: "2L" } } },
-                        { id: 31,  name: "Can-Coca-Cola",                                                   image: "dcokec.jpg",            cat: "beverages",       subcat: "Cold Drink",                          selectedVariant: "S",           variants: { "S":        { price: 40, count: 0, unit: "300ml" } } },
-                        { id: 32,  name: "Can-Dite Coke",                                                   image: "dcoked.jpg",            cat: "beverages",       subcat: "Cold Drink",                          selectedVariant: "S",           variants: { "S":        { price: 40, count: 0, unit: "500ml" } } },
-                        { id: 33,  name: "Can-Pepsi Zero Sugar",                                                image: "dpepsiz.jpg",           cat: "beverages",       subcat: "Cold Drink",                          selectedVariant: "S",           variants: { "S":        { price: 40, count: 0, unit: "300ml" } } },
-                        { id: 34,  name: "Can-Mountain Dew",                                                   image: "dmountain.jpg",         cat: "beverages",       subcat: "Cold Drink",                          selectedVariant: "S",           variants: { "S":        { price: 40, count: 0, unit: "300ml" } } },
 
-                /*Juice*/{ id: 4,  name: "Frooti Mango",                                                    image: "dfrooti.jpg",           cat: "beverages",       subcat: "Juices",                       selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "150ml" }, "L": { price: 105, count: 0, unit: "2L" } } },
-                         { id: 5,  name: "Maaza",                                                           image: "dmaaza.jpg",            cat: "beverages",       subcat: "Juices",                       selectedVariant: "S",           variants: { "S":        { price: 50, count: 0, unit: "600ml" }, "L": { price: 80, count: 0, unit: "1.75L" } } },
-                         { id: 6,  name: "Real Fruit Power Orange Juice",                                   image: "drealo.jpg",            cat: "beverages",       subcat: "Juices",                       selectedVariant: "L",           variants: { "L":        { price: 125, count: 0, unit: "1L" } } },
-                         { id: 7,  name: "Real Fruit Power Guava Juice",                                    image: "drealg.jpg",            cat: "beverages",       subcat: "Juices",                       selectedVariant: "L",           variants: { "L":        { price: 115, count: 0, unit: "1L" } } },
-                         { id: 8,  name: "Real Fruit Power Litchi Juice",                                   image: "dreall.jpg",            cat: "beverages",       subcat: "Juices",                       selectedVariant: "L",           variants: { "L":        { price: 120, count: 0, unit: "1L" } } },
-
-         /*Energy Drink*/{ id: 9,  name: "Hell Classic",                                                    image: "dhellc.jpg",            cat: "beverages",       subcat: "Energy Drinks",                selectedVariant: "L",           variants: { "L":        { price: 60, count: 0, unit: "250ml" } } },    
-                         { id: 10,  name: "Hell Watermelon",                                                 image: "dhellw.jpg",            cat: "beverages",       subcat: "Energy Drinks",                selectedVariant: "L",           variants: { "L":        { price: 60, count: 0, unit: "250ml" } } },    
-                         { id: 11,  name: "Hell Black Cherry",                                               image: "dhellbc.jpg",           cat: "beverages",       subcat: "Energy Drinks",                selectedVariant: "L",           variants: { "L":        { price: 60, count: 0, unit: "250ml" } } },
-                         { id: 12,  name: "Red Bull",                                                       image: "dred.jpg",              cat: "beverages",       subcat: "Energy Drinks",                          selectedVariant: "S",           variants: { "S":        { price: 40, count: 0, unit: "300ml" } } },
-                         { id: 13,  name: "Monster Zero Sugar Ultra",                                       image: "dmonster.jpg",              cat: "beverages",       subcat: "Energy Drinks",                selectedVariant: "S",           variants: { "S":        { price: 125, count: 0, unit: "350ml" } } },
-
-            /*Mogu Mogu*/{ id: 14,  name: "Strawberry Fruit Drink",                                         image: "dmogus.jpg",            cat: "beverages",       subcat: "Mogu Mogu",                    selectedVariant: "S",           variants: { "S":        { price: 70, count: 0, unit: "320ml" } } },
-                         { id: 15,  name: "Lychee Fruit Drink with Nata De Coco",                           image: "dmogul.jpg",            cat: "beverages",       subcat: "Mogu Mogu",                    selectedVariant: "S",           variants: { "S":        { price: 70, count: 0, unit: "320ml" } } },
-                         { id: 16,  name: "Blackcurrant Drink with Nata De Coco",                           image: "dmogub.jpg",            cat: "beverages",       subcat: "Mogu Mogu",                    selectedVariant: "S",           variants: { "S":        { price: 70, count: 0, unit: "320ml" } } },
-                         { id: 17,  name: "Grape Fruit Drink with Nata De Coco",                            image: "dmogug.jpg",            cat: "beverages",       subcat: "Mogu Mogu",                    selectedVariant: "S",           variants: { "S":        { price: 70, count: 0, unit: "320ml" } } },
-                         { id: 18,  name: "Mango Drink",                                                    image: "dmogum.jpg",            cat: "beverages",       subcat: "Mogu Mogu",                    selectedVariant: "S",           variants: { "S":        { price: 70, count: 0, unit: "320ml" } } },
-                         { id: 19,  name: "Melon Fruit Drink with Nata De Coco",                            image: "dmogumelon.jpg",        cat: "beverages",       subcat: "Mogu Mogu",                    selectedVariant: "S",           variants: { "S":        { price: 70, count: 0, unit: "320ml" } } },
-                         { id: 20,  name: "Pineapple Fruit Drink",                                          image: "dmogup.jpg",            cat: "beverages",       subcat: "Mogu Mogu",                    selectedVariant: "S",           variants: { "S":        { price: 70, count: 0, unit: "320ml" } } },
-
-
-                 /*Milk*/{ id: 21,  name: "Amul Kool Kesar",                                                 image: "damulk.jpg",            cat: "beverages",       subcat: "Amul",                         selectedVariant: "S",           variants: { "S":        { price: 25, count: 0, unit: "180ml" } } },
-                         { id: 22,  name: "Amul Masti Spiced Salted Buttermilk",                             image: "damulc.jpg",            cat: "beverages",       subcat: "Amul",                         selectedVariant: "S",           variants: { "S":        { price: 15, count: 0, unit: "200ml" } } },
-                         { id: 23,  name: "Amul Lassi",                                                      image: "damull.jpg",            cat: "beverages",       subcat: "Amul",                         selectedVariant: "S",           variants: { "S":        { price: 25, count: 0, unit: "200ml" } } },
-                 
-                /*Water*/{ id: 24,  name: "Mineral Water",                                                   image: "dwater.jpg",            cat: "beverages",       subcat: "Water & Soda",                 selectedVariant: "S",           variants: { "S":        { price: 20, count: 0, unit: "1L" }, "L": { price: 70, count: 0, unit: "5L" } } },
-                         { id: 25,  name: "Schweppes Indian Tonic Water",                                    image: "dschweppesi.jpg",       cat: "beverages",       subcat: "Water & Soda",                 selectedVariant: "S",           variants: { "S":        { price: 60, count: 0, unit: "300ml" } } },
-                         { id: 26,  name: "Duke's Club Soda Water",                                          image: "dschweppesi.jpg",       cat: "beverages",       subcat: "Water & Soda",                 selectedVariant: "S",           variants: { "S":        { price: 20, count: 0, unit: "750ml" } } },
-                         { id: 27, name: "O'cean Pink Guava Water",                                         image: "dwog.jpg",              cat: "beverages",       subcat: "Water & Soda",                       selectedVariant: "S",           variants: { "S":        { price: 60, count: 0, unit: "500ml" } } },
-                         { id: 28, name: "O'cean Peach & Passion Water",                                    image: "dwop.jpg",              cat: "beverages",       subcat: "Water & Soda",                       selectedVariant: "S",           variants: { "S":        { price: 60, count: 0, unit: "500ml" } } },
-                         { id: 29, name: "O'cean Crispy Apple Water",                                       image: "dwoa.jpg",              cat: "beverages",       subcat: "Water & Soda",                       selectedVariant: "S",           variants: { "S":        { price: 60, count: 0, unit: "500ml" } } },
-                         { id: 30, name: "O'cean Lychee Flavoured Water",                                   image: "dwol.jpg",              cat: "beverages",       subcat: "Water & Soda",                       selectedVariant: "S",           variants: { "S":        { price: 60, count: 0, unit: "500ml" } } },
-                         
-                  /*Can*/
-                         
-                
-/* Chocolates */
-                        
-                        
-                        
-                        
-             /*Cadbury*/{ id: 2001, name: "Cadbury Dairy Milk Crackle Milk",                                image: "ccadburyc.jpg",         cat: "chocolates",                subcat: "Cadbury",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 50, count: 0, unit: "36g" } } },
-                        { id: 2002, name: "Cadbury Dairy Milk Fruit and Nut",                               image: "chfruitnnut.jpg",       cat: "chocolates",                subcat: "Cadbury",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 100, count: 0, unit: "75g" } } },     
-                        { id: 2003, name: "Cadbury Dairy Milk Roast Almond Milk",                           image: "chfruitnnut.jpg",       cat: "chocolates",                subcat: "Cadbury",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 50, count: 0, unit: "36g" } } },     
-                        { id: 2004, name: "Cadbury Lickables",                                              image: "clickables.jpg",        cat: "chocolates",                subcat: "Cadbury",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 45, count: 0, unit: "20g" } } },
-                        { id: 2005, name: "Cadbury Nutties",                                                image: "cnutties.jpg",          cat: "chocolates",                subcat: "Cadbury",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 45, count: 0, unit: "30g" } } },
-                        { id: 2006, name: "Cadbury Dairy Milk Crispello Milk",                              image: "chcrispello.jpg",       cat: "chocolates",                subcat: "Cadbury",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 40, count: 0, unit: "35g" } } },
-                        { id: 2007, name: "Cadbury Fuse Peanut & Caramel",                                  image: "chfuse.jpg",            cat: "chocolates",                subcat: "Cadbury",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 45, count: 0, unit: "43g" } } },
-
-                        
-
-                /*Amul*/{ id: 2008, name: "Amul Dark Chocolate",                                            image: "chdc.jpg",              cat: "chocolates",                subcat: "Amul",             selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 200, count: 0, unit: "150g" } } },
-                        { id: 2009, name: "Amul Smooth & Creamy Milk",                                      image: "camulsc.jpg",           cat: "chocolates",                subcat: "Amul",             selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 160, count: 0, unit: "125g" } } },
-                        { id: 2010, name: "Amul Belgian Smooth and Creamy Milk",                            image: "camulbc.jpg",           cat: "chocolates",                subcat: "Amul",             selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 200, count: 0, unit: "150g" } } },
-                        { id: 2011, name: "Amul Velvett",                                                   image: "chvelvett.jpg",         cat: "chocolates",                subcat: "Amul",             selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 50, count: 0, unit: "35g" } } },
-
-        /*Hershey's*/   { id: 2012, name: "Hershey's Kisses Milk Pack",                                     image: "ckissesmc.jpg",         cat: "chocolates",                subcat: "Hershey's",        selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 55, count: 0, unit: "36g" } } },
-                        { id: 2013, name: "Hershey's Kisses Almonds Milk Pack",                             image: "ckissesa.jpg",          cat: "chocolates",                subcat: "Hershey's",        selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 60, count: 0, unit: "34g" } } },
-                        { id: 2014, name: "Hershey's Kisses Cookies n Creme Assorted",                      image: "ckissescnc.jpg",        cat: "chocolates",                subcat: "Hershey's",        selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 60, count: 0, unit: "34g" } } },
-
-             /*Nestle*/ { id: 2015, name: "Nestle Milkybar Creamy Milky Treat",                             image: "cnestlemb.jpg",         cat: "chocolates",                subcat: "Nestle",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 40, count: 0, unit: "47g" } } },
-                        { id: 2016, name: "Nestle Kitkat",                                                  image: "chkitkat.jpg",          cat: "chocolates",                subcat: "Nestle",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 30, count: 0, unit: "38g" } } }, 
-                        { id: 2017, name: "Nestle Munch Max Nuts",                                          image: "cnestlemm.jpg",         cat: "chocolates",                subcat: "Nestle",           selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 30, count: 0, unit: "37g" } } }, 
-
-             
-
-                /*Kids*/{ id: 2018, name: "Kinder joy",                                                     image: "chkinderjoy.jpg",       cat: "chocolates",                subcat: "Kids",             selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 45, count: 0, unit: "20g" } } },
-                        { id: 2019, name: "Lotte Choco Pie Cake",                                           image: "chkinderjoy.jpg",       cat: "chocolates",                subcat: "Kids",             selectedVariant: "Qty.",        variants: { "Qty.":     { price: 10, count: 0, unit: "1pc" } } },
-                        { id: 2020, name: "Twix Cookie Caramel Filled Bar",                                 image: "ctwix.jpg",             cat: "chocolates",                subcat: "Kids",             selectedVariant: "Qty.",        variants: { "Qty.":     { price: 100, count: 0, unit: "50g" } } },
-                        { id: 2021, name: "Snickers Peanut Nougat & Caramel",                               image: "csnickers.jpg",         cat: "chocolates",                subcat: "Kids",             selectedVariant: "Wgt.",        variants: { "Wgt.":     { price: 30, count: 0, unit: "38.5g" } } },
-                        
-                        
-                
-/* Biscuits */
-
-             /*sunfest*/{ id: 3001, name: "Dark Fantasy Choco Fills",                                       image: "bidf.jpg",              cat: "biscuits",                  subcat: "Sunfeast",          selectedVariant: "L",           variants: { "L":        { price: 35, count: 0, unit: "69g" } } },
-                        { id: 3002, name: "Dark Fantasy Choco Nut Fills",                                   image: "bdfcnf.jpg",            cat: "biscuits",                  subcat: "Sunfeast",          selectedVariant: "L",           variants: { "L":        { price: 35, count: 0, unit: "69g" } } },
-                        { id: 3003, name: "Dark Fantasy Dual Fills",                                        image: "bdfdf.jpg",             cat: "biscuits",                  subcat: "Sunfeast",          selectedVariant: "L",           variants: { "L":        { price: 45, count: 0, unit: "69g" } } },
-                        { id: 3004, name: "Dark Fantasy Coffee Fills",                                      image: "bdfcf.jpg",             cat: "biscuits",                  subcat: "Sunfeast",          selectedVariant: "L",           variants: { "L":        { price: 40, count: 0, unit: "75g" } } },
-
-               /*Parle*/{ id: 3005, name: "Hide & Seek Coffee Chocolate",                                   image: "bihideandseekc.jpg",    cat: "biscuits",                  subcat: "Parle",              selectedVariant: "L",           variants: { "L":        { price: 30, count: 0, unit: "100g" } } },
-                        { id: 3008, name: "Parle-G",                                                        image: "biparleg.jpg",          cat: "biscuits",                  subcat: "Parle",              selectedVariant: "L",           variants: { "L":        { price: 80, count: 0, unit: "800g" } } },
-                        { id: 3006, name: "Hide & Seek",                                                    image: "bihideandseek.jpg",     cat: "biscuits",                  subcat: "Parle",             selectedVariant: "L",           variants: { "L":        { price: 30, count: 0, unit: "100g" } } },
-                        { id: 3007, name: "Oreo",                                                           image: "bioreo.jpg",            cat: "biscuits",                  subcat: "Parle",             selectedVariant: "L",           variants: { "L":        { price: 40, count: 0, unit: "125g" } } },  
-                        { id: 3009, name: "Cheese Craker",                                                  image: "bipriyagoldck.jpg",     cat: "biscuits",                  subcat: "Parle",              selectedVariant: "L",           variants: { "L":        { price: 25, count: 0, unit: "136g" } } },
-
-           /*Britannia*/{ id: 3010, name: "Good Day Cashew Almond",                                         image: "bigooddayc.jpg",        cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 40, count: 0, unit: "200g" } } },
-                        { id: 3012, name: "Good Day Pista Badam",                                           image: "bigooddayp.jpg",        cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 50, count: 0, unit: "200g" } } },
-                        { id: 3013, name: "Good Day ChocoChip",                                             image: "bigooddaychoco.jpg",    cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 100, count: 0, unit: "444g" } } },
-                        { id: 3014, name: "Good Day Butter",                                                image: "bigooddaybutter.jpg",   cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 40, count: 0, unit: "200g" } } },
-                        { id: 3015, name: "Good Day Fruit & Nut Cookies",                                   image: "bigooddayfn.jpg",       cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 100, count: 0, unit: "450g" } } },
-                        { id: 3016, name: "Britannia Bourbon ",                                             image: "bibritanniab.jpg",      cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 35, count: 0, unit: "100g" } } },
-                        { id: 3017, name: "Britannia Nice Time Coconut Biscuit",                            image: "bibritanniant.jpg",     cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 25, count: 0, unit: "136g" } } },
-                        { id: 2018, name: "Britannia Croissant",                                            image: "ccroissant.jpg",        cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 75, count: 0, unit: "240g" } } },
-                        { id: 3019, name: "Britannia Marigold",                                             image: "bimari.jpg",            cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 40, count: 0, unit: "208g" } } },
-                        { id: 3020, name: "Britannia Milk Bikis",                                           image: "bimb.jpg",              cat: "biscuits",                  subcat: "Britannia",          selectedVariant: "L",           variants: { "L":        { price: 70, count: 0, unit: "500g" } }  },
-                
-/* Snacks */
-             /*Kurkure*/{ id: 4001, name: "Kurkure Chutney",                                                image: "skurkurec.jpg",         cat: "snacks",                    subcat: "Kurkure",            selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "40g" }, "L": { price: 25, count: 0, unit: "75g" } } },
-                        { id: 4002, name: "Kurkure Chilli",                                                 image: "skurkurecc.jpg",        cat: "snacks",                    subcat: "Kurkure",            selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "40g" }, "L": { price: 25, count: 0, unit: "75g" } } },
-                        { id: 4003, name: "Kurkure Masala",                                                 image: "skurkurem.jpg",         cat: "snacks",                    subcat: "Kurkure",            selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "40g" }, "L": { price: 25, count: 0, unit: "75g" } } },
-                        { id: 4004, name: "Kurkure Puffcorn",                                               image: "skurkurep.jpg",         cat: "snacks",                    subcat: "Kurkure",            selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "40g" }, "L": { price: 25, count: 0, unit: "75g" } } },
-                        { id: 4005, name: "Kurkure Schezwan Chutney",                                       image: "skurkuresc.jpg",        cat: "snacks",                    subcat: "Kurkure",            selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "40g" }, "L": { price: 25, count: 0, unit: "75g" } } },
-
-                /*Lays*/{ id: 4006, name: "Lay's India's M",                                                image: "slaysb.jpg",            cat: "snacks",                    subcat: "Lays",               selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "75g" }, "L": { price: 25, count: 0, unit: "200g" } } },
-                        { id: 4007, name: "Lay's American",                                                 image: "slaysg.jpg",            cat: "snacks",                    subcat: "Lays",               selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "75g" }, "L": { price: 25, count: 0, unit: "200g" } } },
-                        { id: 4008, name: "Lay's Classic",                                                  image: "slaysy.jpg",            cat: "snacks",                    subcat: "Lays",               selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "75g" }, "L": { price: 25, count: 0, unit: "200g" } } },
-                        { id: 4009, name: "Lay's Chile Limon",                                              image: "slaysc.jpg",            cat: "snacks",                    subcat: "Lays",               selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "75g" }, "L": { price: 25, count: 0, unit: "200g" } } },
-                        { id: 4010, name: "Lay's Crispz",                                                   image: "slayscr.jpg",           cat: "snacks",                    subcat: "Lays",               selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "75g" }, "L": { price: 25, count: 0, unit: "200g" } } },
-                        { id: 4011, name: "Lay's Spanish Tomato Tango",                                     image: "slayss.jpg",            cat: "snacks",                    subcat: "Lays",               selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "75g" }, "L": { price: 25, count: 0, unit: "200g" } } },
-                        { id: 4012, name: "Lay's Sizzlin Hot",                                              image: "slayssh.jpg",           cat: "snacks",                    subcat: "Lays",               selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "75g" }, "L": { price: 25, count: 0, unit: "200g" } } },
-                        { id: 4013, name: "Lay's Hot n sweet chilli",                                       image: "slaysw.jpg",            cat: "snacks",                    subcat: "Lays",               selectedVariant: "S",           variants: { "S":        { price: 10, count: 0, unit: "75g" }, "L": { price: 25, count: 0, unit: "200g" } } },
-
-                        
-            /*Pingles */{ id: 4014, name: "Pringles Sour Cream & Onion Potato",                             image: "spinglessc.jpg",        cat: "snacks",                    subcat: "Pingles",            selectedVariant: "L",           variants: { "L":        { price: 136, count: 0, unit: "141g" } } },
-                        { id: 4015, name: "Pringles Original Potato Chips",                                 image: "spingleo.jpg",          cat: "snacks",                    subcat: "Pingles",            selectedVariant: "L",           variants: { "L":        { price: 110, count: 0, unit: "107g" } } },
-                        { id: 4016, name: "Pringles Pizza Flavoured Potato Chips",                          image: "spinglep.jpg",          cat: "snacks",                    subcat: "Pingles",            selectedVariant: "L",           variants: { "L":        { price: 101, count: 0, unit: "102g" } } },
-                        
-             /*Namkeen*/{ id: 4017, name: "Haldirams Punjabi Tadka",                                        image: "spunjabi.jpg",          cat: "snacks",                    subcat: "Haldiram's",          selectedVariant: "S",           variants: { "S":        { price: 20, count: 0, unit: "75g" }, "L": { price: 55, count: 0, unit: "210g" } } },
-                        { id: 4018, name: "Haldirams Bhujia",                                               image: "sbhujia.jpg",           cat: "snacks",                    subcat: "Haldiram's",          selectedVariant: "S",           variants: { "S":        { price: 20, count: 0, unit: "75g" }, "L": { price: 60, count: 0, unit: "200g" } } },
-                        { id: 4019, name: "Haldirams Salted Peanuts",                                       image: "ssalted.jpg",           cat: "snacks",                    subcat: "Haldiram's",          selectedVariant: "S",           variants: { "S":        { price: 20, count: 0, unit: "75g" }, "L": { price: 55, count: 0, unit: "200g" } } },
-                        { id: 4020, name: "Haldirams Gup Shup",                                             image: "sgup.jpg",              cat: "snacks",                    subcat: "Haldiram's",          selectedVariant: "S",           variants: { "S":        { price: 20, count: 0, unit: "75g" }, "L": { price: 55, count: 0, unit: "200g" } } },
-                        { id: 4021, name: "Haldirams Moong Dal",                                            image: "shaldirammd.jpg",       cat: "snacks",                    subcat: "Haldiram's",          selectedVariant: "S",           variants: { "S":        { price: 20, count: 0, unit: "75g" }, "L": { price: 60, count: 0, unit: "200g" } } },
-                        { id: 4022, name: "Haldirams Lite Mixture",                                         image: "shaldiramlm.jpg",       cat: "snacks",                    subcat: "Haldiram's",          selectedVariant: "S",           variants: { "S":        { price: 20, count: 0, unit: "75g" }, "L": { price: 40, count: 0, unit: "150g" } } },
-                
-/* Personal */
-                /*Hair*/{ id: 5001, name: "Comb 15cm",                                                      image: "pccomb.jpg",            cat: "personal",                  subcat: "Hair",                selectedVariant: "Size",        variants: { "Size":     { price: 50, count: 0, unit: "20cm" } } },
-                        { id: 5002, name: "Almond Oil",                                                     image: "pcalmond.jpg",          cat: "personal",                  subcat: "Hair",                selectedVariant: "Bottle",      variants: { "Bottle":   { price: 85, count: 0, unit: "95ml" } } },
-                        { id: 5003, name: "Head and Shoulders Anti Dandruff",                               image: "pcshampoo.jpg",         cat: "personal",                  subcat: "Hair",                selectedVariant: "Bottle",      variants: { "Bottle":   { price: 181, count: 0, unit: "180ml" } } },
-                        
-
-                /*Body*/{ id: 5004, name: "Pears Pack of 3",                                                image: "pcpears.jpg",           cat: "personal",                  subcat: "Body",               selectedVariant: "Piece",       variants: { "Piece":    { price: 200, count: 0, unit: "1pk" } } },
-                        { id: 5005, name: "Lux Black Orchid & Juniper",                                     image: "pcbodywash.jpg",        cat: "personal",                  subcat: "Body",               selectedVariant: "Piece",       variants: { "Piece":    { price: 90, count: 0, unit: "90ml" } } },
-                        { id: 5006, name: "Bath Loofah",                                                    image: "pcl.jpg",               cat: "personal",                  subcat: "Body",               selectedVariant: "Piece",       variants: { "Piece":    { price: 100, count: 0, unit: "1pc" } } },
-
-                /*Face*/{ id: 5007, name: "Cetaphil",                                                       image: "pccleanser.jpg",        cat: "personal",                  subcat: "Face",               selectedVariant: "Piece",       variants: { "Piece":    { price: 405, count: 0, unit: "118ml" } } },
-                        { id: 5008, name: "Minimilist Vitamin b5 10%",                                      image: "pcmoist.jpg",           cat: "personal",                  subcat: "Face",               selectedVariant: "Piece",       variants: { "Piece":    { price: 350, count: 0, unit: "50g" } } },
-                        { id: 5009, name: "Himalaya Lip Balm",                                              image: "pclb.jpg",              cat: "personal",                  subcat: "Face",               selectedVariant: "Piece",       variants: { "Piece":    { price: 350, count: 0, unit: "50g" } } },
-
-
-            /*Grooming*/{ id: 5010, name: "Scissors 2 X 4.25inch",                                          image: "pcscissors.jpg",        cat: "personal",                  subcat: "Grooming",           selectedVariant: "Size",        variants: { "Size":     { price: 50, count: 0, unit: "2x4inch" } } },
-                        { id: 5011, name: "Handkerchief pack of 3",                                         image: "pchandkerchief.jpg",    cat: "personal",                  subcat: "Grooming",           selectedVariant: "Piece",       variants: { "Piece":    { price: 170, count: 0, unit: "1pk" } } },
-                        { id: 5012, name: "Gillette Mac 3 Razor",                                           image: "pcgillette.jpg",        cat: "personal",                  subcat: "Grooming",           selectedVariant: "Piece",       variants: { "Piece":    { price: 192, count: 0, unit: "1pc" } } },
-                        { id: 5013,  name: "Nail Clipper",                                                   image: "pcnc.jpg",              cat: "personal",                  subcat: "Grooming",           selectedVariant: "Piece",       variants: { "Piece":    { price: 80, count: 0, unit: "1pc" } } },
-
-
-              /*Dental*/{ id: 5014, name: "Colgate",                                                        image: "pccolgate.jpg",         cat: "personal",                  subcat: "Dental",             selectedVariant: "Tube",        variants: { "Tube":     { price: 120, count: 0, unit: "180ml" } } },
-                        { id: 5015, name: "Oral-B Pro Clean",                                               image: "pcoralb.jpg",           cat: "personal",                  subcat: "Dental",             selectedVariant: "Piece",       variants: { "Piece":    { price: 50, count: 0, unit: "1pc" } } },
-
-/*Cleaning*/
-                /*cloths*/{ id: 6001, name: "Ariel Power Gel Front Load Liquid Detergent",                   image: "clarielb.jpg",         cat: "cleaningessentials",        subcat: "Clothes",            selectedVariant: "Qty",        variants: { "Qty":     { price: 215, count: 0, unit: "950ml" } } },
-                          { id: 6002, name: "Comfort After Wash Fabric Conditioner -Lily Fresh",             image: "clcomforlf.jpg",       cat: "cleaningessentials",        subcat: "Clothes",            selectedVariant: "Qty",        variants: { "Qty":     { price: 235, count: 0, unit: "860ml" } } },
-                          { id: 6003, name: "Comfort After Wash Fabric Conditioner -Morning Fresh",          image: "clcomfortmf.jpg",      cat: "cleaningessentials",        subcat: "Clothes",            selectedVariant: "Qty",        variants: { "Qty":     { price: 235, count: 0, unit: "860ml" } } },
-
-    /*Toilet & Bathroom*/ { id: 6004, name: "Harpic Advanced Disinfectant Toilet Cleaner)",                  image: "clharpic.jpg",         cat: "cleaningessentials",        subcat: "Toilet & Bathroom",  selectedVariant: "Qty",        variants: { "Qty":     { price: 235, count: 0, unit: "860ml" } } },
-                          { id: 6005, name: "Feather's 2 Ply Toilet Tissue Roll Ultra-soft",                 image: "cltp.jpg",             cat: "cleaningessentials",        subcat: "Toilet & Bathroom",  selectedVariant: "Qty",        variants: { "Qty":     { price: 450, count: 0, unit: "10pc" } } },
-
-        /*Room Freshners*/{ id: 6006, name: "Odonil Lavender Mist Room Freshener (Lavender)",                image: "clodonill.jpg",        cat: "cleaningessentials",        subcat: "Room Freshners",     selectedVariant: "Qty",        variants: { "Qty":     { price: 170, count: 0, unit: "220ml" } } },
-        
-      /*Surface Cleaners*/{ id: 6007, name: "Colin Glass Cleaner ",                                          image: "clcolin.jpg",        cat: "cleaningessentials",        subcat: "Surface Cleaners",   selectedVariant: "Qty",        variants: { "Qty":     { price: 120, count: 0, unit: "500ml" } } },
-                          { id: 6008, name: "Lizol Disinfectant Surface & Floor Cleaner ",                   image: "cllizol.jpg",        cat: "cleaningessentials",        subcat: "Surface Cleaners",   selectedVariant: "Qty",        variants: { "Qty":     { price: 260, count: 0, unit: "1L" } } },
-                          { id: 6009, name: "Feather's Premium Paper Napkin(ply 2) ",                        image: "clfeathern.jpg",       cat: "cleaningessentials",        subcat: "Surface Cleaners",   selectedVariant: "Qty",        variants: { "Qty":     { price: 90, count: 0, unit: "105gm" } } }
                         
     ];
 
@@ -248,9 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-    if (currentTheme === 'dark') {
+    if (currentTheme === 'dark' && checkbox) {
     body.classList.add('dark-mode');
-    toggleSwitch.checked = true; // This moves the slider to the right
+    checkbox.checked = true; // ✅ FIXED
 }
 
     // --- UI RENDERING ---
@@ -696,16 +528,19 @@ if (statsSection) {
   document.body.classList.toggle('dark-mode');
     });
 
-    // --- STARTUP ---
+    // --- STARTUP ---// --- STARTUP ---
     updateCount();
     updateDate();
     setInterval(updateCount, 60000);
+    
+    // Sort and Render
     products.sort((a, b) => a.name.localeCompare(b.name));
-    renderCollections();
-    startCounters();
-    if (currentTheme === 'dark') {
+    renderCollections(); // This is the crucial call!
+
+    // Corrected theme logic
+    if (currentTheme === 'dark' && checkbox) {
     body.classList.add('dark-mode');
-    toggleSwitch.checked = true; 
+    checkbox.checked = true; // ✅ FIXED
 }
 
 });
